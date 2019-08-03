@@ -9,12 +9,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="NavBarDefault">
           <NavBarDefault />
-        </div>
-        <Switch>
-          <Route onUpdate={window.scrollTo(0, 0)} exact path="/" component={HomePage}/>
-        </Switch>  
+          <Switch>
+            <Route onUpdate={window.scrollTo(0, 0)} exact path="/" component={HomePage}/>
+          </Switch>  
       </div>
     );
   }

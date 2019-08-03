@@ -12,42 +12,48 @@ html {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 
 }
 
-.container {
-  margin: 0 auto;
-
-}
 
 h1 {
   font-family: fantasy;
-
+  font-weight: 300;
+  padding-left: 80px;
+  padding-top: 10px;
 }
 
-nav {
-  padding-top: 5rem;
+.navbarContainer {
+  width: 100%;
+  height: 100px;
+  margin: auto;
+  position: -webkit-sticky;
+  position: fixed;
   display: flex;
-  justify-content: center;
   align-items: center;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.navbarGlobal {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navSection {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
   text-transform: uppercase;
   font-size: 1.6rem;
-}
-
-.menu-toggle {
-  position: fixed;
-  top: 2.5rem;
-  right: 2.5rem;
-  color: black;
-  font-size: 3rem;
-  cursor: pointer;
-  z-index: 1000;
-  display: none;
+  padding: 10px;
 }
 
 .brand {
-  font-size: 3rem;
   font-weight: 300;
   transform: translateX(-100rem);
   animation: slideIn .5s forwards;
@@ -56,21 +62,26 @@ nav {
 
 .titleBlack {
   color: black !important;
+  font-size: 3rem !important;
+  font-weight: 700;
 }
+
 .brand span {
   color: crimson;
+  font-size: 3.5rem !important;
+  font-weight: 700;
 }
 
 .titlesection {
   color: black;
   font-family: fantasy;
-  font-size: 1.3em;
+  font-size: 1em;
 }
 
 .titlesectionRed {
   color: crimson;
   font-family: fantasy;
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 ul {
@@ -166,10 +177,6 @@ nav ul li a:hover::after {
 
 @media screen and (max-width: 700px) {
 
-  .menu-toggle {
-    display: block;
-  }
-
   nav {
     padding-top: 0;
     display: none;
@@ -185,23 +192,20 @@ nav ul li a:hover::after {
   }
 
   nav ul li {
-    margin-top: 5rem;
+    margin-top: 1.1rem;
   }
 
   nav ul li a {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 
   .brand {
-    font-size: 5rem;
+    font-size: 1.1rem;
   }
 
-  .overlay.menu-open,
-  nav.menu-open {
-    display: flex;
-    transform: scale(1);
-    opacity: 1;
+  h1 {
+    padding-right: 45px;
   }
 
 }
