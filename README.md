@@ -1,68 +1,67 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Photo Dje
 
-## Available Scripts
+Portfolio
 
-In the project directory, you can run:
+## Installation
 
-### `npm start`
+- 1 .  Fork this project.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- 2 . Go to  your repository
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+- 3 . Clone it in your computer :
 
-### `npm test`
+`$ git clone https://github.com/`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### SQL initialization
 
-### `npm run build`
+- 1 . Make your Sql database.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Rest api initialization
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+1 . Go to the back folder .
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- 2 . Add new file *conf.js* in /back/routes/conf.js with your settings.
 
-### `npm run eject`
+Example :
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```javascript
+const mysql = require('mysql');
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+const connection = mysql.createConnection({
+  host: '',
+  port: '',
+  user: '',
+  password: '',
+  database: '',
+});
+export default connection;
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- 3 . Dependencies installation  npm:
 
-## Learn More
+`$ npm install`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- 4 . Start the api:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+`$ npm start`
 
-### Code Splitting
+### Front initialization 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+- 1 . Go to the front folder.
 
-### Analyzing the Bundle Size
+- 2 . Create a new file *.env* at the folder's root with the fetch path.
+Example: 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+`REACT_APP_API_URL = http://localhost:4000`
 
-### Making a Progressive Web App
+- 3 . Npm dependencies installation :
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+`$ npm install`
 
-### Advanced Configuration
+- 4 . Start the front project :
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+`$ npm start`
 
-### Deployment
+- 5 . And to finish, in your navigator,  go to *http://localhost:3000/*  to see the web project.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
