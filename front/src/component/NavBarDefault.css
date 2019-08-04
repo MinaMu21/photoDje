@@ -7,7 +7,7 @@ nav {
   min-height: 8vh !important;
   background-color: rgba(0, 0, 0);
   font-family: fantasy;
-  padding: 30px 15px 10px 15px;
+  padding: 25px 15px 0px 15px;
 
 }
 
@@ -167,7 +167,6 @@ nav ul li a:hover::after {
   top: 22px;
   width: 70px;
   height: 70px;
-
   border-radius: 10px;
   overflow: hidden;
 }
@@ -236,7 +235,6 @@ nav ul li a:hover::after {
 /* Menu burger */
 
 #camera {
-  display: none;
   cursor: pointer;
 }
 
@@ -257,7 +255,6 @@ nav ul li a:hover::after {
     right: 30px;
   }
 }
-
 
 @media screen and (max-width: 768px) {
   body {

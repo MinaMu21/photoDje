@@ -13,8 +13,15 @@ class NavBarDefault extends Component {
   render() {
     return (
 
-      <nav>
+      <nav sticky="top">
         <div class="overlay"></div>
+        <div id="camera">
+          <div className="strip"></div>
+          <div className="lens"></div>
+          <div className="led"></div>
+          <div className="button"></div>
+        </div>
+        <div id="panel"></div>
         <div className="logo">
           <h1 className="brand">
             <a href="/" className="logoWhite">
@@ -31,13 +38,7 @@ class NavBarDefault extends Component {
           <li><a href="/contact"><span className="titlesection">Contact</span></a></li>
         </ul>
 
-        <div id="camera">
-          <div className="strip"></div>
-          <div className="lens"></div>
-          <div className="led"></div>
-          <div className="button"></div>
-        </div>
-        <div id="panel"></div>
+
       </nav>
 
 

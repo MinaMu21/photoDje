@@ -12,17 +12,14 @@ class Slider extends Component {
     return (
       <div className="borderCarousel">
         <Carousel infiniteLoop useKeyboardArrows autoPlay className="slider">
-          <div className="picture1">
-            <img src={picture1} alt="picture1" width="50%" />
-            <p className="legend">Legend 1</p>
+          <div className="picture">
+            <img src={picture1} alt="picture1" width="100%" className="imgSlider" />
           </div>
-          <div className="picture2">
-            <img src={picture2} alt="picture2" />
-            <p className="legend">Legend 2</p>
+          <div className="picture">
+            <img src={picture2} alt="picture2" width="100%" className="imgSlider" />
           </div>
-          <div className="picture3">
-            <img src={picture3} alt="picture3" />
-            <p className="legend">Legend 3</p>
+          <div className="picture">
+            <img src={picture3} alt="picture3" width="100%" className="imgSlider" />
           </div>
         </Carousel>
       </div>
